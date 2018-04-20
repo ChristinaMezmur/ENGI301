@@ -1810,6 +1810,16 @@ ARRAY</text>
 <text x="63.5" y="246.38" size="6.4516" layer="95">9-AXIS IMU</text>
 <text x="231.14" y="139.7" size="6.4516" layer="95">LEDs</text>
 <text x="223.52" y="162.56" size="6.4516" layer="95">BUZZER</text>
+<text x="233.68" y="205.74" size="1.778" layer="97">COM-07950</text>
+<text x="144.78" y="35.56" size="1.778" layer="97">COM-10302</text>
+<text x="198.12" y="33.02" size="1.778" layer="97">COM-10302</text>
+<text x="330.2" y="124.46" size="1.778" layer="97">COM-10302</text>
+<text x="330.2" y="96.52" size="1.778" layer="97">COM-10302</text>
+<text x="330.2" y="71.12" size="1.778" layer="97">COM-10302</text>
+<text x="330.2" y="43.18" size="1.778" layer="97">COM-10302</text>
+<text x="195.58" y="76.2" size="1.778" layer="97">LTST-C191TBKT</text>
+<text x="231.14" y="91.44" size="1.778" layer="97">LTST-C191TBKT</text>
+<text x="269.24" y="104.14" size="1.778" layer="97">LTST-C191TBKT</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -1821,8 +1831,12 @@ ARRAY</text>
 <instance part="BUTTON2" gate="G$1" x="325.12" y="38.1"/>
 <instance part="BUTTON3" gate="G$1" x="325.12" y="66.04"/>
 <instance part="LED0" gate="G$1" x="215.9" y="99.06" rot="R270"/>
-<instance part="LED1" gate="G$1" x="228.6" y="114.3" rot="R270"/>
-<instance part="LED2" gate="G$1" x="248.92" y="109.22" rot="R270"/>
+<instance part="LED1" gate="G$1" x="228.6" y="114.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="231.14" y="114.3" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="LED2" gate="G$1" x="269.24" y="114.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="274.32" y="114.3" size="1.778" layer="95" rot="R270"/>
+</instance>
 <instance part="MOD1" gate="G$1" x="274.32" y="175.26"/>
 <instance part="MOD" gate="G$1" x="274.32" y="210.82"/>
 <instance part="POCKETBEAGLE" gate="G$1" x="160.02" y="96.52"/>
@@ -1857,7 +1871,7 @@ ARRAY</text>
 <instance part="R3" gate="G$1" x="248.92" y="129.54" rot="R90"/>
 <instance part="GND5" gate="1" x="215.9" y="53.34"/>
 <instance part="GND6" gate="1" x="228.6" y="68.58"/>
-<instance part="GND7" gate="1" x="248.92" y="73.66"/>
+<instance part="GND7" gate="1" x="269.24" y="71.12"/>
 <instance part="R4" gate="G$1" x="96.52" y="205.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.0214" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="94.742" y="207.01" size="1.778" layer="96" rot="R90"/>
@@ -2102,15 +2116,16 @@ ARRAY</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="248.92" y1="86.36" x2="248.92" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="P$2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="269.24" y1="73.66" x2="269.24" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="P$1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="114.3" x2="248.92" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="119.38" x2="248.92" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">

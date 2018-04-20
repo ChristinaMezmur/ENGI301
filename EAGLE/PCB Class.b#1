@@ -835,6 +835,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 </pass>
 </autorouter>
 <elements>
+<element name="BUZZER" library="ENGI301_PCB_design_project" package="SEM-1203(42)" value="" x="80.01" y="46.99" rot="R180"/>
 <element name="BUTTON5" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="27.02" y="28.4"/>
 <element name="BUTTON0" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="138.78" y="47.1"/>
 <element name="BUTTON4" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="9.24" y="27.7"/>
