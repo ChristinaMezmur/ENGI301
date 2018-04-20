@@ -2117,7 +2117,8 @@ ARRAY</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="116.84" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="116.84" x2="215.9" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="LED0" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2202,8 +2203,9 @@ ARRAY</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="33.02" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <label x="119.38" y="25.4" size="1.778" layer="95"/>
+<pinref part="BUTTON0" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="POCKETBEAGLE" gate="G$1" pin="PWR.BTN"/>
@@ -2215,8 +2217,9 @@ ARRAY</text>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="33.02" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="27.94" x2="185.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 <label x="175.26" y="25.4" size="1.778" layer="95"/>
+<pinref part="BUTTON1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="POCKETBEAGLE" gate="G$1" pin="GPIO20"/>
@@ -2228,8 +2231,9 @@ ARRAY</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="124.46" x2="307.34" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="119.38" x2="317.5" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="119.38" x2="314.96" y2="119.38" width="0.1524" layer="91"/>
 <label x="307.34" y="116.84" size="1.778" layer="95"/>
+<pinref part="BUTTON5" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="POCKETBEAGLE" gate="G$1" pin="GPIO48"/>
@@ -2269,8 +2273,9 @@ ARRAY</text>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="304.8" y1="40.64" x2="304.8" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="38.1" x2="317.5" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="38.1" x2="314.96" y2="38.1" width="0.1524" layer="91"/>
 <label x="307.34" y="35.56" size="1.778" layer="95"/>
+<pinref part="BUTTON2" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="POCKETBEAGLE" gate="G$1" pin="GPIO27"/>

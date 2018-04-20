@@ -840,23 +840,23 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <element name="BUTTON1" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="27.02" y="46.4"/>
 <element name="BUTTON2" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="44.8" y="27"/>
 <element name="BUTTON3" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="27.02" y="10.14"/>
-<element name="LED0" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="20.32" y="-105.41"/>
-<element name="LED1" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="-17.78" y="-168.91"/>
-<element name="LED2" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="-17.78" y="-173.99"/>
+<element name="LED0" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="116.84" y="49.53"/>
+<element name="LED1" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="124.46" y="52.07"/>
+<element name="LED2" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="106.68" y="44.45"/>
 <element name="MOD1" library="ENGI301_PCB_design_project" package="FE06W" value="MOD-LED8X8RGB-CONN" x="36.83" y="55.88"/>
 <element name="MOD" library="ENGI301_PCB_design_project" package="FE06W" value="MOD-LED8X8RGB-CONN" x="97.79" y="55.88"/>
 <element name="POCKETBEAGLE" library="ENGI301_PCB_design_project" package="POCKETBEAGLE" value="POCKETBEAGLE" x="93.98" y="3.81"/>
 <element name="MPU" library="ENGI301_PCB_design_project" package="QFN-3MMX3MM" value="" x="72.39" y="39.37"/>
-<element name="C1" library="ENGI301_PCB_design_project" package="C0402" value="" x="-24.13" y="-262.89"/>
-<element name="C2" library="ENGI301_PCB_design_project" package="C0402" value="" x="-20.32" y="-265.43"/>
-<element name="C3" library="ENGI301_PCB_design_project" package="C0402" value="" x="-24.13" y="-269.24"/>
-<element name="R1" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="-29.21" y="-267.97"/>
-<element name="R2" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="-33.02" y="-267.97"/>
-<element name="R3" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="-36.83" y="-267.97"/>
-<element name="R4" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="-40.64" y="-267.97"/>
-<element name="R5" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="-44.45" y="-267.97"/>
-<element name="R6" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="-25.4" y="-262.89"/>
-<element name="R7" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="-29.21" y="-260.35" rot="R180"/>
+<element name="C1" library="ENGI301_PCB_design_project" package="C0402" value="" x="72.39" y="34.29"/>
+<element name="C2" library="ENGI301_PCB_design_project" package="C0402" value="" x="68.58" y="34.29"/>
+<element name="C3" library="ENGI301_PCB_design_project" package="C0402" value="" x="74.93" y="33.02"/>
+<element name="R1" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="118.11" y="44.45"/>
+<element name="R2" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="124.46" y="46.99"/>
+<element name="R3" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="110.49" y="44.45"/>
+<element name="R4" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="68.58" y="44.45"/>
+<element name="R5" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="67.31" y="41.91"/>
+<element name="R6" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="71.12" y="-34.29"/>
+<element name="R7" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="59.69" y="-29.21" rot="R180"/>
 <element name="R8" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="38.1" y="11.43"/>
 <element name="R9" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="19.05" y="1.27"/>
 <element name="R10" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="2.54" y="16.51"/>
@@ -881,9 +881,9 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <wire x1="43.18" y1="55.88" x2="104.14" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="72.99" y1="40.87" x2="101.6" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="73.89" y1="40.37" x2="72.99" y2="40.87" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.5712" y1="-262.89" x2="73.89" y2="40.37" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.5712" y1="-269.24" x2="-23.5712" y2="-262.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.7612" y1="-265.43" x2="-23.5712" y2="-262.89" width="0" layer="19" extent="1-1"/>
+<wire x1="72.9488" y1="34.29" x2="73.89" y2="40.37" width="0" layer="19" extent="1-1"/>
+<wire x1="75.4888" y1="33.02" x2="72.9488" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="69.1388" y1="34.29" x2="72.9488" y2="34.29" width="0" layer="19" extent="1-1"/>
 <wire x1="80.01" y1="46.28" x2="43.18" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SYS_VDD1_3P3V">
@@ -904,10 +904,10 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <wire x1="30.48" y1="55.88" x2="91.44" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="73.89" y1="38.37" x2="115.13" y2="9.88" width="0" layer="19" extent="1-1"/>
 <wire x1="71.39" y1="37.87" x2="73.89" y2="38.37" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.6888" y1="-262.89" x2="71.39" y2="37.87" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.8788" y1="-265.43" x2="-24.6888" y2="-262.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.2001" y1="-262.89" x2="-24.6888" y2="-262.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.4099" y1="-260.35" x2="-26.2001" y2="-262.89" width="0" layer="19" extent="1-1"/>
+<wire x1="71.8312" y1="34.29" x2="71.39" y2="37.87" width="0" layer="19" extent="1-1"/>
+<wire x1="68.0212" y1="34.29" x2="71.8312" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="70.3199" y1="-34.29" x2="71.8312" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="60.4901" y1="-29.21" x2="70.3199" y2="-34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="MPU" pad="10"/>
@@ -915,17 +915,17 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$2">
 <contactref element="MPU" pad="24"/>
 <contactref element="R5" pad="1"/>
-<wire x1="71.39" y1="40.87" x2="-45.2501" y2="-267.97" width="0" layer="19" extent="1-1"/>
+<wire x1="71.39" y1="40.87" x2="66.5099" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="MPU" pad="23"/>
 <contactref element="R4" pad="1"/>
-<wire x1="71.79" y1="40.87" x2="-41.4401" y2="-267.97" width="0" layer="19" extent="1-1"/>
+<wire x1="71.79" y1="40.87" x2="67.7799" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="POCKETBEAGLE" pad="44"/>
 <contactref element="R3" pad="2"/>
-<wire x1="-36.0299" y1="-267.97" x2="107.51" y2="35.28" width="0" layer="19" extent="1-1"/>
+<wire x1="111.2901" y1="44.45" x2="107.51" y2="35.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="MPU" pad="22"/>
@@ -938,20 +938,22 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$11">
 <contactref element="LED2" pad="P$1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="-37.6301" y1="-267.97" x2="-18.53" y2="-173.99" width="0" layer="19" extent="1-1"/>
+<wire x1="109.6899" y1="44.45" x2="105.93" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R1" pad="1"/>
 <contactref element="LED0" pad="P$1"/>
-<wire x1="-30.0101" y1="-267.97" x2="19.57" y2="-105.41" width="0" layer="19" extent="1-1"/>
+<wire x1="117.3099" y1="44.45" x2="116.09" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R2" pad="2"/>
+<contactref element="POCKETBEAGLE" pad="56"/>
+<wire x1="125.2601" y1="46.99" x2="122.75" y2="35.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="LED1" pad="P$1"/>
 <contactref element="R2" pad="1"/>
-<wire x1="-33.8201" y1="-267.97" x2="-18.53" y2="-168.91" width="0" layer="19" extent="1-1"/>
+<wire x1="123.6599" y1="46.99" x2="123.71" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="POCKETBEAGLE" pad="37"/>
@@ -984,14 +986,14 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="POCKETBEAGLE" pad="48"/>
 <contactref element="BUTTON0" pad="P$1"/>
 <wire x1="132.78" y1="50.1" x2="112.59" y2="35.28" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.5999" y1="-262.89" x2="132.78" y2="50.1" width="0" layer="19" extent="1-1"/>
+<wire x1="71.9201" y1="-34.29" x2="132.78" y2="50.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON1">
 <contactref element="R7" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="20"/>
 <contactref element="BUTTON1" pad="P$1"/>
 <wire x1="21.02" y1="49.4" x2="122.75" y2="9.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.0101" y1="-260.35" x2="21.02" y2="49.4" width="0" layer="19" extent="1-1"/>
+<wire x1="58.8899" y1="-29.21" x2="21.02" y2="49.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON5">
 <contactref element="R11" pad="2"/>
@@ -1067,6 +1069,15 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <vertex x="177.8" y="88.9"/>
 <vertex x="177.8" y="-25.4"/>
 </polygon>
+<contactref element="LED1" pad="P$2"/>
+</signal>
+<signal name="N$10">
+<contactref element="LED2" pad="P$2"/>
+</signal>
+<signal name="N$14">
+<contactref element="POCKETBEAGLE" pad="53"/>
+<contactref element="R1" pad="2"/>
+<wire x1="118.9101" y1="44.45" x2="120.21" y2="32.74" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

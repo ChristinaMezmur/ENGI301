@@ -687,18 +687,18 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 </autorouter>
 <elements>
 <element name="BUZZER" library="ENGI301_PCB_design_project" package="SEM-1203(42)" value="" x="-13.97" y="8.89"/>
-<element name="BUTTON5" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-6" y="-278.94"/>
-<element name="BUTTON0" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-6" y="-285.64"/>
-<element name="BUTTON4" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-6" y="-292.34"/>
-<element name="BUTTON1" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-6" y="-299.04"/>
-<element name="BUTTON2" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-6" y="-305.74"/>
+<element name="BUTTON5" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-8.54" y="-263.7"/>
+<element name="BUTTON0" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="14.32" y="-272.94"/>
+<element name="BUTTON4" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="19.4" y="-289.8"/>
+<element name="BUTTON1" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="29.56" y="-306.66"/>
+<element name="BUTTON2" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-13.62" y="-282.88"/>
 <element name="BUTTON3" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="-6" y="-312.44"/>
 <element name="LED0" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="-17.78" y="-163.83"/>
 <element name="LED1" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="-17.78" y="-168.91"/>
 <element name="LED2" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="-17.78" y="-173.99"/>
 <element name="MOD1" library="ENGI301_PCB_design_project" package="FE06W" value="MOD-LED8X8RGB-CONN" x="-6.35" y="-185.42"/>
 <element name="MOD" library="ENGI301_PCB_design_project" package="FE06W" value="MOD-LED8X8RGB-CONN" x="-6.35" y="-203.2"/>
-<element name="POCKETBEAGLE" library="ENGI301_PCB_design_project" package="POCKETBEAGLE" value="POCKETBEAGLE" x="-17.78" y="-250.19"/>
+<element name="POCKETBEAGLE" library="ENGI301_PCB_design_project" package="POCKETBEAGLE" value="POCKETBEAGLE" x="99.06" y="8.89"/>
 <element name="MPU" library="ENGI301_PCB_design_project" package="QFN-3MMX3MM" value="" x="-24.13" y="-260.35"/>
 <element name="C1" library="ENGI301_PCB_design_project" package="C0402" value="" x="-24.13" y="-265.43"/>
 <element name="C2" library="ENGI301_PCB_design_project" package="C0402" value="" x="-20.32" y="-265.43"/>
@@ -747,11 +747,11 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="POCKETBEAGLE" pad="14"/>
 <contactref element="POCKETBEAGLE" pad="59"/>
 <contactref element="R7" pad="1"/>
-<wire x1="3.37" y1="-221.26" x2="3.37" y2="-244.12" width="0" layer="19" extent="1-1"/>
-<wire x1="16.07" y1="-221.26" x2="3.37" y2="-221.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.7" y1="-203.2" x2="3.37" y2="-221.26" width="0" layer="19" extent="1-1"/>
+<wire x1="120.21" y1="37.82" x2="120.21" y2="14.96" width="0" layer="19" extent="1-1"/>
+<wire x1="132.91" y1="37.82" x2="120.21" y2="37.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.7" y1="-203.2" x2="120.21" y2="37.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.7" y1="-185.42" x2="-12.7" y2="-203.2" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.63" y1="-261.35" x2="3.37" y2="-244.12" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.63" y1="-261.35" x2="120.21" y2="14.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.13" y1="-261.85" x2="-22.63" y2="-261.35" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.6888" y1="-265.43" x2="-25.13" y2="-261.85" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.8788" y1="-265.43" x2="-24.6888" y2="-265.43" width="0" layer="19" extent="1-1"/>
@@ -774,7 +774,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$6">
 <contactref element="POCKETBEAGLE" pad="44"/>
 <contactref element="R3" pad="2"/>
-<wire x1="-36.0299" y1="-267.97" x2="-4.25" y2="-218.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.0299" y1="-267.97" x2="112.59" y2="40.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="MPU" pad="22"/>
@@ -791,6 +791,8 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 </signal>
 <signal name="N$12">
 <contactref element="R1" pad="1"/>
+<contactref element="LED0" pad="P$1"/>
+<wire x1="-30.0101" y1="-267.97" x2="-18.53" y2="-163.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R2" pad="2"/>
@@ -803,7 +805,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$15">
 <contactref element="POCKETBEAGLE" pad="37"/>
 <contactref element="BUZZER" pad="P$1"/>
-<wire x1="-13.97" y1="12.14" x2="-11.87" y2="-221.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.97" y1="12.14" x2="104.97" y2="37.82" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R4" pad="2"/>
@@ -829,36 +831,44 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="BUTTON0">
 <contactref element="R6" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="48"/>
-<wire x1="-47.4599" y1="-316.23" x2="0.83" y2="-218.72" width="0" layer="19" extent="1-1"/>
+<contactref element="BUTTON0" pad="P$1"/>
+<wire x1="8.32" y1="-269.94" x2="117.67" y2="40.36" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.4599" y1="-316.23" x2="8.32" y2="-269.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON1">
 <contactref element="R7" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="20"/>
-<wire x1="-51.2699" y1="-316.23" x2="10.99" y2="-244.12" width="0" layer="19" extent="1-1"/>
+<contactref element="BUTTON1" pad="P$1"/>
+<wire x1="23.56" y1="-303.66" x2="127.83" y2="14.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.2699" y1="-316.23" x2="23.56" y2="-303.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON5">
 <contactref element="R11" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="60"/>
-<wire x1="-66.5099" y1="-316.23" x2="16.07" y2="-218.72" width="0" layer="19" extent="1-1"/>
+<contactref element="BUTTON5" pad="P$1"/>
+<wire x1="-14.54" y1="-260.7" x2="132.91" y2="40.36" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.5099" y1="-316.23" x2="-14.54" y2="-260.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON4">
 <contactref element="R10" pad="2"/>
 <contactref element="BUTTON4" pad="P$1"/>
 <contactref element="POCKETBEAGLE" pad="54"/>
-<wire x1="-12" y1="-289.34" x2="8.45" y2="-218.72" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.6999" y1="-316.23" x2="-12" y2="-289.34" width="0" layer="19" extent="1-1"/>
+<wire x1="13.4" y1="-286.8" x2="125.29" y2="40.36" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.6999" y1="-316.23" x2="13.4" y2="-286.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON3">
 <contactref element="R9" pad="2"/>
 <contactref element="BUTTON3" pad="P$1"/>
 <contactref element="POCKETBEAGLE" pad="58"/>
-<wire x1="-12" y1="-309.44" x2="13.53" y2="-218.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="-309.44" x2="130.37" y2="40.36" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.8899" y1="-316.23" x2="-12" y2="-309.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON2">
 <contactref element="R8" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="55"/>
-<wire x1="-55.0799" y1="-316.23" x2="10.99" y2="-221.26" width="0" layer="19" extent="1-1"/>
+<contactref element="BUTTON2" pad="P$1"/>
+<wire x1="-19.62" y1="-279.88" x2="127.83" y2="37.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.0799" y1="-316.23" x2="-19.62" y2="-279.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="POCKETBEAGLE" pad="24"/>
@@ -866,17 +876,17 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="8X8CLK">
 <contactref element="MOD" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="8"/>
-<wire x1="-10.16" y1="-203.2" x2="-4.25" y2="-244.12" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.16" y1="-203.2" x2="112.59" y2="14.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="8X8MOSI">
 <contactref element="MOD" pad="4"/>
 <contactref element="POCKETBEAGLE" pad="12"/>
-<wire x1="0.83" y1="-244.12" x2="-5.08" y2="-203.2" width="0" layer="19" extent="1-1"/>
+<wire x1="117.67" y1="14.96" x2="-5.08" y2="-203.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="8X8MOSI1">
 <contactref element="MOD1" pad="4"/>
 <contactref element="POCKETBEAGLE" pad="61"/>
-<wire x1="-5.08" y1="-185.42" x2="18.61" y2="-221.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="-185.42" x2="135.45" y2="37.82" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="8X8CLK1">
 <contactref element="POCKETBEAGLE" pad="65"/>
@@ -884,12 +894,12 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="8X8CS1">
 <contactref element="MOD1" pad="3"/>
 <contactref element="POCKETBEAGLE" pad="67"/>
-<wire x1="-7.62" y1="-185.42" x2="26.23" y2="-221.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-185.42" x2="143.07" y2="37.82" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="8X8CS">
 <contactref element="MOD" pad="3"/>
 <contactref element="POCKETBEAGLE" pad="6"/>
-<wire x1="-7.62" y1="-203.2" x2="-6.79" y2="-244.12" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-203.2" x2="110.05" y2="14.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <polygon width="0.1524" layer="2">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1310,12 +1314,12 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="RESET#" pad="62"/>
 <connect gate="G$1" pin="SPI0.CLK" pad="8"/>
 <connect gate="G$1" pin="SPI0.CS" pad="6"/>
-<connect gate="G$1" pin="SPI0.MISO" pad="63"/>
-<connect gate="G$1" pin="SPI0.MOSI" pad="61"/>
+<connect gate="G$1" pin="SPI0.MISO" pad="10"/>
+<connect gate="G$1" pin="SPI0.MOSI" pad="12"/>
 <connect gate="G$1" pin="SPI1.CLK" pad="65"/>
 <connect gate="G$1" pin="SPI1.CS" pad="67"/>
-<connect gate="G$1" pin="SPI1.MISO" pad="10"/>
-<connect gate="G$1" pin="SPI1.MOSI" pad="12"/>
+<connect gate="G$1" pin="SPI1.MISO" pad="63"/>
+<connect gate="G$1" pin="SPI1.MOSI" pad="61"/>
 <connect gate="G$1" pin="UART0.RX" pad="32"/>
 <connect gate="G$1" pin="UART0.TX" pad="30"/>
 <connect gate="G$1" pin="UART4.RX" pad="41"/>
@@ -1673,6 +1677,32 @@ Sizes: 0402, 0603 &amp; 0805</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ENGI301_design_example">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1740,6 +1770,7 @@ Sizes: 0402, 0603 &amp; 0805</description>
 <part name="SUPPLY11" library="ENGI301_PCB_design_project" deviceset="VDD_5V" device=""/>
 <part name="SUPPLY12" library="ENGI301_PCB_design_project" deviceset="VDD_3P3V" device=""/>
 <part name="SUPPLY13" library="ENGI301_PCB_design_project" deviceset="VDD_3P3V" device=""/>
+<part name="GND16" library="ENGI301_design_example" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1857,6 +1888,7 @@ ARRAY</text>
 <instance part="SUPPLY11" gate="G$1" x="152.4" y="236.22"/>
 <instance part="SUPPLY12" gate="G$1" x="213.36" y="231.14"/>
 <instance part="SUPPLY13" gate="G$1" x="144.78" y="231.14"/>
+<instance part="GND16" gate="1" x="261.62" y="170.18"/>
 </instances>
 <busses>
 </busses>
@@ -1897,6 +1929,24 @@ ARRAY</text>
 <pinref part="BUZZER" gate="G$1" pin="-"/>
 <wire x1="218.44" y1="180.34" x2="220.98" y2="180.34" width="0.1524" layer="91"/>
 <junction x="218.44" y="180.34"/>
+</segment>
+<segment>
+<pinref part="MOD" gate="G$1" pin="GND@1"/>
+<wire x1="269.24" y1="218.44" x2="261.62" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="218.44" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="215.9" x2="261.62" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="182.88" x2="271.78" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="MOD" gate="G$1" pin="GND@2"/>
+<wire x1="269.24" y1="215.9" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="MOD1" gate="G$1" pin="GND@2"/>
+<wire x1="269.24" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="180.34" x2="261.62" y2="182.88" width="0.1524" layer="91"/>
+<junction x="261.62" y="215.9"/>
+<junction x="261.62" y="218.44"/>
+<junction x="261.62" y="182.88"/>
+<junction x="261.62" y="180.34"/>
+<wire x1="261.62" y1="180.34" x2="261.62" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SYS_VDD1_3P3V" class="0">
@@ -2228,24 +2278,6 @@ ARRAY</text>
 <label x="210.82" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="MOD" gate="G$1" pin="GND@1"/>
-<wire x1="269.24" y1="218.44" x2="261.62" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="218.44" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="215.9" x2="261.62" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="182.88" x2="271.78" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="MOD" gate="G$1" pin="GND@2"/>
-<wire x1="269.24" y1="215.9" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="GND@2"/>
-<wire x1="269.24" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="180.34" x2="261.62" y2="182.88" width="0.1524" layer="91"/>
-<junction x="261.62" y="215.9"/>
-<junction x="261.62" y="218.44"/>
-<junction x="261.62" y="182.88"/>
-<junction x="261.62" y="180.34"/>
-</segment>
-</net>
 <net name="N$25" class="0">
 <segment>
 <wire x1="152.4" y1="236.22" x2="152.4" y2="231.14" width="0.1524" layer="91"/>
@@ -2258,10 +2290,7 @@ ARRAY</text>
 <pinref part="MOD" gate="G$1" pin="DATA_SCK_IN"/>
 <wire x1="269.24" y1="226.06" x2="248.92" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="226.06" x2="248.92" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="220.98" x2="248.92" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="190.5" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="220.98" x2="236.22" y2="220.98" width="0.1524" layer="91"/>
-<junction x="248.92" y="220.98"/>
 <label x="236.22" y="220.98" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -2272,38 +2301,63 @@ ARRAY</text>
 </net>
 <net name="8X8MOSI" class="0">
 <segment>
-<pinref part="MOD" gate="G$1" pin="DATA_LATCH_IN/#MCLR"/>
-<wire x1="269.24" y1="223.52" x2="251.46" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="223.52" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="DATA_LATCH_IN/#MCLR"/>
-<wire x1="251.46" y1="215.9" x2="251.46" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="187.96" x2="269.24" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="215.9" x2="238.76" y2="215.9" width="0.1524" layer="91"/>
-<junction x="251.46" y="215.9"/>
-<label x="236.22" y="215.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI0.MOSI"/>
-<wire x1="205.74" y1="205.74" x2="218.44" y2="205.74" width="0.1524" layer="91"/>
-<label x="210.82" y="205.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="8X8MISO" class="0">
-<segment>
 <pinref part="MOD" gate="G$1" pin="DATA_LINE_IN"/>
 <wire x1="269.24" y1="220.98" x2="254" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="DATA_LINE_IN"/>
 <wire x1="254" y1="220.98" x2="254" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="254" y1="210.82" x2="254" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="254" y1="185.42" x2="269.24" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="254" y1="210.82" x2="236.22" y2="210.82" width="0.1524" layer="91"/>
-<junction x="254" y="210.82"/>
 <label x="236.22" y="210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI0.MISO"/>
-<wire x1="205.74" y1="203.2" x2="218.44" y2="203.2" width="0.1524" layer="91"/>
-<label x="213.36" y="203.2" size="1.778" layer="95"/>
+<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI0.MOSI"/>
+<wire x1="205.74" y1="205.74" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
+<label x="208.28" y="205.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="8X8MOSI1" class="0">
+<segment>
+<pinref part="MOD1" gate="G$1" pin="DATA_LINE_IN"/>
+<wire x1="254" y1="185.42" x2="269.24" y2="185.42" width="0.1524" layer="91"/>
+<label x="251.46" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI1.MOSI"/>
+<wire x1="154.94" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
+<label x="139.7" y="205.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="8X8CLK1" class="0">
+<segment>
+<wire x1="248.92" y1="190.5" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
+<label x="251.46" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI1.CLK"/>
+<wire x1="154.94" y1="208.28" x2="147.32" y2="208.28" width="0.1524" layer="91"/>
+<label x="142.24" y="208.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="8X8CS1" class="0">
+<segment>
+<pinref part="MOD1" gate="G$1" pin="DATA_LATCH_IN/#MCLR"/>
+<wire x1="251.46" y1="187.96" x2="269.24" y2="187.96" width="0.1524" layer="91"/>
+<label x="248.92" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI1.CS"/>
+<wire x1="154.94" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
+<label x="142.24" y="200.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="8X8CS" class="0">
+<segment>
+<pinref part="MOD" gate="G$1" pin="DATA_LATCH_IN/#MCLR"/>
+<wire x1="269.24" y1="223.52" x2="251.46" y2="223.52" width="0.1524" layer="91"/>
+<label x="251.46" y="223.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POCKETBEAGLE" gate="G$1" pin="SPI0.CS"/>
+<wire x1="205.74" y1="200.66" x2="215.9" y2="200.66" width="0.1524" layer="91"/>
+<label x="210.82" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

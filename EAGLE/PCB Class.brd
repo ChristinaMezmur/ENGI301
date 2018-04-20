@@ -173,6 +173,8 @@
 <wire x1="152.4" y1="0" x2="152.4" y2="63.5" width="0" layer="20"/>
 <wire x1="152.4" y1="63.5" x2="0" y2="63.5" width="0" layer="20"/>
 <wire x1="0" y1="63.5" x2="0" y2="0" width="0" layer="20"/>
+<text x="45.72" y="2.54" size="1.778" layer="112">Christina Mezmur  ENGI 301 PCB</text>
+<text x="5.08" y="58.42" size="1.778" layer="112">CM</text>
 </plain>
 <libraries>
 <library name="ENGI301_PCB_design_project">
@@ -665,17 +667,17 @@ chip</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="ENGI301_Maze_Project_4lyr (1)">
+<designrules name="ENGI301_Maze_Project_4lyr (1) *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for inner layers.</description>
 <param name="layerSetup" value="(1*2*15*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="0.23mm 0.93mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.23mm"/>
-<param name="mdWireWire" value="10mil"/>
-<param name="mdWirePad" value="10mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="5mil"/>
 <param name="mdWireVia" value="10mil"/>
-<param name="mdPadPad" value="10mil"/>
+<param name="mdPadPad" value="5mil"/>
 <param name="mdPadVia" value="10mil"/>
 <param name="mdViaVia" value="10mil"/>
 <param name="mdSmdPad" value="10mil"/>
@@ -686,7 +688,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="12mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
+<param name="msWidth" value="5mil"/>
 <param name="msDrill" value="12mil"/>
 <param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
@@ -835,11 +837,11 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 </pass>
 </autorouter>
 <elements>
-<element name="BUZZER" library="ENGI301_PCB_design_project" package="SEM-1203(42)" value="" x="80.01" y="49.53"/>
+<element name="BUZZER" library="ENGI301_PCB_design_project" package="SEM-1203(42)" value="" x="80.01" y="46.99" rot="R180"/>
 <element name="BUTTON5" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="27.02" y="28.4"/>
 <element name="BUTTON0" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="138.78" y="47.1"/>
 <element name="BUTTON4" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="9.24" y="27.7"/>
-<element name="BUTTON1" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="27.02" y="46.4" rot="R180"/>
+<element name="BUTTON1" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="24.48" y="46.4" rot="R180"/>
 <element name="BUTTON2" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="44.8" y="27"/>
 <element name="BUTTON3" library="ENGI301_PCB_design_project" package="BUTTON" value="" x="27.02" y="10.14"/>
 <element name="LED0" library="ENGI301_PCB_design_project" package="LTST-C191TBKT" value="" x="116.84" y="49.53"/>
@@ -848,21 +850,21 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <element name="MOD1" library="ENGI301_PCB_design_project" package="FE06W" value="MOD-LED8X8RGB-CONN" x="36.83" y="55.88"/>
 <element name="MOD" library="ENGI301_PCB_design_project" package="FE06W" value="MOD-LED8X8RGB-CONN" x="97.79" y="55.88"/>
 <element name="POCKETBEAGLE" library="ENGI301_PCB_design_project" package="POCKETBEAGLE" value="POCKETBEAGLE" x="93.98" y="3.81"/>
-<element name="MPU" library="ENGI301_PCB_design_project" package="QFN-3MMX3MM" value="" x="72.39" y="39.37"/>
-<element name="C1" library="ENGI301_PCB_design_project" package="C0402" value="" x="72.39" y="34.29"/>
-<element name="C2" library="ENGI301_PCB_design_project" package="C0402" value="" x="68.58" y="34.29"/>
-<element name="C3" library="ENGI301_PCB_design_project" package="C0402" value="" x="74.93" y="33.02"/>
+<element name="MPU" library="ENGI301_PCB_design_project" package="QFN-3MMX3MM" value="" x="49.53" y="44.45"/>
+<element name="C1" library="ENGI301_PCB_design_project" package="C0402" value="10nF" x="59.69" y="44.45" rot="R90"/>
+<element name="C2" library="ENGI301_PCB_design_project" package="C0402" value="0.1uF" x="71.12" y="41.91" rot="R90"/>
+<element name="C3" library="ENGI301_PCB_design_project" package="C0402" value="0.1uF" x="62.23" y="38.1" rot="R270"/>
 <element name="R1" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="118.11" y="44.45"/>
 <element name="R2" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="124.46" y="46.99"/>
 <element name="R3" library="ENGI301_PCB_design_project" package="R0603" value="1K" x="110.49" y="44.45"/>
-<element name="R4" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="68.58" y="44.45"/>
-<element name="R5" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="67.31" y="41.91"/>
-<element name="R6" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="40.64" y="36.83"/>
+<element name="R4" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="53.34" y="49.53"/>
+<element name="R5" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="44.45" y="49.53"/>
+<element name="R6" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="40.64" y="39.37"/>
 <element name="R7" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="36.83" y="39.37" rot="R180"/>
-<element name="R8" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="38.1" y="11.43"/>
-<element name="R9" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="19.05" y="1.27"/>
-<element name="R10" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="2.54" y="16.51"/>
-<element name="R11" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="19.05" y="26.67"/>
+<element name="R8" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="35.56" y="26.67" rot="R90"/>
+<element name="R9" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="16.51" y="11.43"/>
+<element name="R10" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="2.54" y="39.37"/>
+<element name="R11" library="ENGI301_PCB_design_project" package="R0603" value="3K" x="19.05" y="34.29" rot="R90"/>
 <element name="U$1" library="ENGI301_Maze_Project_Parts" package="MOD-LED8X8RGB" value="" x="78.74" y="58.42" rot="R90"/>
 <element name="U$2" library="ENGI301_Maze_Project_Parts" package="MOD-LED8X8RGB" value="" x="139.7" y="58.42" rot="R90"/>
 <element name="U$3" library="ENGI301_Maze_Project_Parts" package="MOD-LED8X8RGB" value="" x="78.74" y="116.84" rot="R90"/>
@@ -879,14 +881,45 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="MOD" pad="5"/>
 <contactref element="MOD" pad="6"/>
 <contactref element="MOD1" pad="6"/>
-<wire x1="104.14" y1="55.88" x2="101.6" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="43.18" y1="55.88" x2="104.14" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="72.99" y1="40.87" x2="101.6" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="73.89" y1="40.37" x2="72.99" y2="40.87" width="0" layer="19" extent="1-1"/>
-<wire x1="72.9488" y1="34.29" x2="73.89" y2="40.37" width="0" layer="19" extent="1-1"/>
-<wire x1="75.4888" y1="33.02" x2="72.9488" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="69.1388" y1="34.29" x2="72.9488" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="80.01" y1="46.28" x2="43.18" y2="55.88" width="0" layer="19" extent="1-1"/>
+<contactref element="MOD1" pad="5"/>
+<polygon width="0.1524" layer="2">
+<vertex x="-12.7" y="-12.7"/>
+<vertex x="-12.7" y="76.2"/>
+<vertex x="165.1" y="76.2"/>
+<vertex x="165.1" y="-12.7"/>
+</polygon>
+<wire x1="104.14" y1="55.88" x2="101.6" y2="55.88" width="0.254" layer="1"/>
+<wire x1="43.18" y1="55.88" x2="40.64" y2="55.88" width="0.254" layer="1"/>
+<wire x1="59.944" y1="44.9072" x2="59.7408" y2="44.9072" width="0.254" layer="1"/>
+<wire x1="61.5696" y1="43.2816" x2="59.944" y2="44.9072" width="0.254" layer="1"/>
+<wire x1="61.5696" y1="38.2016" x2="61.5696" y2="42.4688" width="0.254" layer="1"/>
+<wire x1="61.5696" y1="42.4688" x2="61.5696" y2="43.2816" width="0.254" layer="1"/>
+<wire x1="62.23" y1="37.5412" x2="61.5696" y2="38.2016" width="0.254" layer="1"/>
+<wire x1="59.7408" y1="44.9072" x2="59.69" y2="45.0088" width="0.254" layer="1"/>
+<wire x1="61.5696" y1="42.4688" x2="71.12" y2="42.4688" width="0.254" layer="1"/>
+<wire x1="78.8416" y1="50.1904" x2="79.8576" y2="50.1904" width="0.254" layer="1"/>
+<wire x1="71.12" y1="42.4688" x2="78.8416" y2="50.1904" width="0.254" layer="1"/>
+<wire x1="79.8576" y1="50.1904" x2="80.01" y2="50.24" width="0.254" layer="1"/>
+<wire x1="74.3712" y1="55.88" x2="43.18" y2="55.88" width="0.254" layer="16"/>
+<wire x1="79.8576" y1="50.3936" x2="74.3712" y2="55.88" width="0.254" layer="16"/>
+<wire x1="79.8576" y1="50.3936" x2="80.01" y2="50.24" width="0.254" layer="16"/>
+<wire x1="100.7872" y1="55.88" x2="101.6" y2="55.88" width="0.254" layer="1"/>
+<wire x1="99.568" y1="57.0992" x2="100.7872" y2="55.88" width="0.254" layer="1"/>
+<wire x1="86.7664" y1="57.0992" x2="99.568" y2="57.0992" width="0.254" layer="1"/>
+<wire x1="80.0608" y1="50.3936" x2="86.7664" y2="57.0992" width="0.254" layer="16"/>
+<wire x1="80.0608" y1="50.3936" x2="80.01" y2="50.24" width="0.254" layer="16"/>
+<via x="86.7664" y="57.0992" extent="1-16" drill="0.3048"/>
+<wire x1="51.6128" y1="45.5168" x2="51.2064" y2="45.5168" width="0.254" layer="1"/>
+<wire x1="55.0672" y1="48.9712" x2="51.6128" y2="45.5168" width="0.254" layer="1"/>
+<wire x1="55.0672" y1="49.9872" x2="55.0672" y2="48.9712" width="0.254" layer="1"/>
+<wire x1="49.1744" y1="55.88" x2="55.0672" y2="49.9872" width="0.254" layer="1"/>
+<wire x1="43.18" y1="55.88" x2="49.1744" y2="55.88" width="0.254" layer="1"/>
+<wire x1="51.2064" y1="45.5168" x2="51.03" y2="45.45" width="0.254" layer="1"/>
+<wire x1="50.1523" y1="45.6819" x2="50.1523" y2="45.8216" width="0.127" layer="1"/>
+<wire x1="50.4317" y1="45.4025" x2="50.1523" y2="45.6819" width="0.127" layer="1"/>
+<wire x1="50.9905" y1="45.4025" x2="50.4317" y2="45.4025" width="0.127" layer="1"/>
+<wire x1="50.1523" y1="45.8216" x2="50.13" y2="45.95" width="0.127" layer="1"/>
+<wire x1="50.9905" y1="45.4025" x2="51.03" y2="45.45" width="0.127" layer="1"/>
 </signal>
 <signal name="SYS_VDD1_3P3V">
 <contactref element="MPU" pad="8"/>
@@ -900,39 +933,99 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="POCKETBEAGLE" pad="14"/>
 <contactref element="POCKETBEAGLE" pad="59"/>
 <contactref element="R7" pad="1"/>
-<wire x1="115.13" y1="32.74" x2="115.13" y2="9.88" width="0" layer="19" extent="1-1"/>
-<wire x1="127.83" y1="32.74" x2="115.13" y2="32.74" width="0" layer="19" extent="1-1"/>
-<wire x1="91.44" y1="55.88" x2="115.13" y2="32.74" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="55.88" x2="91.44" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="73.89" y1="38.37" x2="115.13" y2="9.88" width="0" layer="19" extent="1-1"/>
-<wire x1="71.39" y1="37.87" x2="73.89" y2="38.37" width="0" layer="19" extent="1-1"/>
-<wire x1="71.8312" y1="34.29" x2="71.39" y2="37.87" width="0" layer="19" extent="1-1"/>
-<wire x1="68.0212" y1="34.29" x2="71.8312" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="39.8399" y1="36.83" x2="71.8312" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="37.6301" y1="39.37" x2="39.8399" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="115.2144" y1="32.7152" x2="115.2144" y2="9.9568" width="0.254" layer="16"/>
+<wire x1="115.2144" y1="9.9568" x2="115.13" y2="9.88" width="0.254" layer="16"/>
+<wire x1="115.2144" y1="32.7152" x2="115.13" y2="32.74" width="0.254" layer="16"/>
+<wire x1="127" y1="32.7152" x2="127.8128" y2="32.7152" width="0.254" layer="1"/>
+<wire x1="125.3744" y1="31.0896" x2="127" y2="32.7152" width="0.254" layer="1"/>
+<wire x1="116.84" y1="31.0896" x2="125.3744" y2="31.0896" width="0.254" layer="1"/>
+<wire x1="115.2144" y1="32.7152" x2="116.84" y2="31.0896" width="0.254" layer="1"/>
+<wire x1="127.8128" y1="32.7152" x2="127.83" y2="32.74" width="0.254" layer="1"/>
+<wire x1="115.2144" y1="32.7152" x2="115.13" y2="32.74" width="0.254" layer="1"/>
+<wire x1="76.2" y1="41.4528" x2="71.12" y2="41.4528" width="0.254" layer="1"/>
+<wire x1="90.6272" y1="55.88" x2="83.312" y2="48.5648" width="0.254" layer="1"/>
+<wire x1="83.312" y1="48.5648" x2="76.2" y2="41.4528" width="0.254" layer="1"/>
+<wire x1="91.44" y1="55.88" x2="90.6272" y2="55.88" width="0.254" layer="1"/>
+<wire x1="71.12" y1="41.4528" x2="71.12" y2="41.3512" width="0.254" layer="1"/>
+<wire x1="52.4256" y1="43.8912" x2="58.928" y2="43.8912" width="0.254" layer="1"/>
+<wire x1="58.928" y1="43.8912" x2="59.69" y2="43.8912" width="0.254" layer="1"/>
+<wire x1="48.9712" y1="40.4368" x2="49.784" y2="41.2496" width="0.254" layer="1"/>
+<wire x1="49.784" y1="41.2496" x2="51.6128" y2="43.0784" width="0.254" layer="1"/>
+<wire x1="51.6128" y1="43.0784" x2="52.4256" y2="43.8912" width="0.254" layer="1"/>
+<wire x1="40.8432" y1="40.4368" x2="48.9712" y2="40.4368" width="0.254" layer="1"/>
+<wire x1="39.8272" y1="39.4208" x2="40.8432" y2="40.4368" width="0.254" layer="1"/>
+<wire x1="39.8272" y1="39.4208" x2="37.7952" y2="39.4208" width="0.254" layer="1"/>
+<wire x1="37.7952" y1="39.4208" x2="37.6301" y2="39.37" width="0.254" layer="1"/>
+<wire x1="39.8272" y1="39.4208" x2="39.8399" y2="39.37" width="0.254" layer="1"/>
+<wire x1="30.48" y1="51.0032" x2="30.48" y2="55.88" width="0.254" layer="1"/>
+<wire x1="37.592" y1="43.8912" x2="30.48" y2="51.0032" width="0.254" layer="1"/>
+<wire x1="37.592" y1="39.4208" x2="37.592" y2="43.8912" width="0.254" layer="1"/>
+<wire x1="37.592" y1="39.4208" x2="37.6301" y2="39.37" width="0.254" layer="1"/>
+<wire x1="80.6704" y1="51.2064" x2="83.312" y2="48.5648" width="0.254" layer="1"/>
+<wire x1="64.6176" y1="51.2064" x2="80.6704" y2="51.2064" width="0.254" layer="1"/>
+<wire x1="58.928" y1="45.5168" x2="64.6176" y2="51.2064" width="0.254" layer="1"/>
+<wire x1="58.928" y1="43.8912" x2="58.928" y2="45.5168" width="0.254" layer="1"/>
+<wire x1="115.0112" y1="33.7312" x2="115.0112" y2="32.9184" width="0.254" layer="16"/>
+<wire x1="113.792" y1="34.9504" x2="115.0112" y2="33.7312" width="0.254" layer="16"/>
+<wire x1="113.792" y1="42.0624" x2="113.792" y2="34.9504" width="0.254" layer="16"/>
+<wire x1="100.3808" y1="55.4736" x2="113.792" y2="42.0624" width="0.254" layer="16"/>
+<wire x1="100.3808" y1="56.2864" x2="100.3808" y2="55.4736" width="0.254" layer="16"/>
+<wire x1="99.568" y1="57.0992" x2="100.3808" y2="56.2864" width="0.254" layer="16"/>
+<wire x1="92.6592" y1="57.0992" x2="99.568" y2="57.0992" width="0.254" layer="16"/>
+<wire x1="91.44" y1="55.88" x2="92.6592" y2="57.0992" width="0.254" layer="16"/>
+<wire x1="115.0112" y1="32.9184" x2="115.13" y2="32.74" width="0.254" layer="16"/>
+<wire x1="48.5648" y1="42.4688" x2="48.5648" y2="42.8752" width="0.254" layer="1"/>
+<wire x1="49.784" y1="41.2496" x2="48.5648" y2="42.4688" width="0.254" layer="1"/>
+<wire x1="48.5648" y1="42.8752" x2="48.53" y2="42.95" width="0.254" layer="1"/>
+<wire x1="51.6128" y1="43.0784" x2="51.2064" y2="43.4848" width="0.254" layer="1"/>
+<wire x1="51.2064" y1="43.4848" x2="51.03" y2="43.45" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="MPU" pad="10"/>
+<contactref element="C3" pad="1"/>
+<wire x1="49.7332" y1="43.7261" x2="49.7332" y2="43.0276" width="0.127" layer="1"/>
+<wire x1="50.0126" y1="44.0055" x2="49.7332" y2="43.7261" width="0.127" layer="1"/>
+<wire x1="58.1152" y1="44.0055" x2="50.0126" y2="44.0055" width="0.127" layer="16"/>
+<wire x1="62.4459" y1="39.6748" x2="58.1152" y2="44.0055" width="0.127" layer="16"/>
+<wire x1="62.4459" y1="38.8366" x2="62.4459" y2="39.6748" width="0.127" layer="1"/>
+<wire x1="62.3062" y1="38.6969" x2="62.4459" y2="38.8366" width="0.127" layer="1"/>
+<wire x1="49.7332" y1="43.0276" x2="49.73" y2="42.95" width="0.127" layer="1"/>
+<wire x1="62.3062" y1="38.6969" x2="62.23" y2="38.6588" width="0.127" layer="1"/>
+<via x="50.0126" y="44.0055" extent="1-16" drill="0.3048"/>
+<via x="62.4459" y="39.6748" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="N$2">
 <contactref element="MPU" pad="24"/>
 <contactref element="R5" pad="1"/>
-<wire x1="71.39" y1="40.87" x2="66.5099" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="47.2186" y1="45.9613" x2="48.4759" y2="45.9613" width="0.127" layer="1"/>
+<wire x1="43.6499" y1="49.53" x2="47.2186" y2="45.9613" width="0.127" layer="1"/>
+<wire x1="48.4759" y1="45.9613" x2="48.53" y2="45.95" width="0.127" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="MPU" pad="23"/>
 <contactref element="R4" pad="1"/>
-<wire x1="71.79" y1="40.87" x2="67.7799" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="48.9712" y1="46.3296" x2="48.9712" y2="46.1264" width="0.254" layer="1"/>
+<wire x1="52.0192" y1="49.3776" x2="48.9712" y2="46.3296" width="0.254" layer="1"/>
+<wire x1="52.4256" y1="49.3776" x2="52.0192" y2="49.3776" width="0.254" layer="1"/>
+<wire x1="48.9712" y1="46.1264" x2="48.93" y2="45.95" width="0.254" layer="1"/>
+<wire x1="52.4256" y1="49.3776" x2="52.5399" y2="49.53" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="POCKETBEAGLE" pad="44"/>
 <contactref element="R3" pad="2"/>
-<wire x1="111.2901" y1="44.45" x2="107.51" y2="35.28" width="0" layer="19" extent="1-1"/>
+<wire x1="111.1504" y1="38.8112" x2="111.1504" y2="44.2976" width="0.254" layer="1"/>
+<wire x1="107.696" y1="35.3568" x2="111.1504" y2="38.8112" width="0.254" layer="1"/>
+<wire x1="111.1504" y1="44.2976" x2="111.2901" y2="44.45" width="0.254" layer="1"/>
+<wire x1="107.696" y1="35.3568" x2="107.51" y2="35.28" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="MPU" pad="22"/>
 <contactref element="MPU" pad="1"/>
-<wire x1="72.19" y1="40.87" x2="70.89" y2="40.37" width="0" layer="19" extent="1-1"/>
+<wire x1="49.0347" y1="45.4025" x2="48.0568" y2="45.4025" width="0.127" layer="1"/>
+<wire x1="49.3141" y1="45.6819" x2="49.0347" y2="45.4025" width="0.127" layer="1"/>
+<wire x1="49.3141" y1="45.8216" x2="49.3141" y2="45.6819" width="0.127" layer="1"/>
+<wire x1="48.0568" y1="45.4025" x2="48.03" y2="45.45" width="0.127" layer="1"/>
+<wire x1="49.3141" y1="45.8216" x2="49.33" y2="45.95" width="0.127" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="LED0" pad="P$2"/>
@@ -940,27 +1033,42 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$11">
 <contactref element="LED2" pad="P$1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="109.6899" y1="44.45" x2="105.93" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="106.8832" y1="45.3136" x2="106.0704" y2="44.5008" width="0.254" layer="1"/>
+<wire x1="108.712" y1="45.3136" x2="106.8832" y2="45.3136" width="0.254" layer="1"/>
+<wire x1="109.5248" y1="44.5008" x2="108.712" y2="45.3136" width="0.254" layer="1"/>
+<wire x1="106.0704" y1="44.5008" x2="105.93" y2="44.45" width="0.254" layer="1"/>
+<wire x1="109.5248" y1="44.5008" x2="109.6899" y2="44.45" width="0.254" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R1" pad="1"/>
 <contactref element="LED0" pad="P$1"/>
-<wire x1="117.3099" y1="44.45" x2="116.09" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="116.2304" y1="45.5168" x2="116.2304" y2="49.3776" width="0.254" layer="1"/>
+<wire x1="117.2464" y1="44.5008" x2="116.2304" y2="45.5168" width="0.254" layer="1"/>
+<wire x1="116.2304" y1="49.3776" x2="116.09" y2="49.53" width="0.254" layer="1"/>
+<wire x1="117.2464" y1="44.5008" x2="117.3099" y2="44.45" width="0.254" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R2" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="56"/>
-<wire x1="125.2601" y1="46.99" x2="122.75" y2="35.28" width="0" layer="19" extent="1-1"/>
+<wire x1="125.1712" y1="37.592" x2="125.1712" y2="46.9392" width="0.254" layer="1"/>
+<wire x1="122.936" y1="35.3568" x2="125.1712" y2="37.592" width="0.254" layer="1"/>
+<wire x1="125.1712" y1="46.9392" x2="125.2601" y2="46.99" width="0.254" layer="1"/>
+<wire x1="122.936" y1="35.3568" x2="122.75" y2="35.28" width="0.254" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="LED1" pad="P$1"/>
 <contactref element="R2" pad="1"/>
-<wire x1="123.6599" y1="46.99" x2="123.71" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="123.7488" y1="47.1424" x2="123.7488" y2="52.0192" width="0.254" layer="1"/>
+<wire x1="123.7488" y1="52.0192" x2="123.71" y2="52.07" width="0.254" layer="1"/>
+<wire x1="123.7488" y1="47.1424" x2="123.6599" y2="46.99" width="0.254" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="POCKETBEAGLE" pad="37"/>
 <contactref element="BUZZER" pad="P$1"/>
-<wire x1="80.01" y1="52.78" x2="99.89" y2="32.74" width="0" layer="19" extent="1-1"/>
+<wire x1="89.0016" y1="43.688" x2="80.0608" y2="43.688" width="0.254" layer="1"/>
+<wire x1="99.7712" y1="32.9184" x2="89.0016" y2="43.688" width="0.254" layer="1"/>
+<wire x1="80.0608" y1="43.688" x2="80.01" y2="43.74" width="0.254" layer="1"/>
+<wire x1="99.7712" y1="32.9184" x2="99.89" y2="32.74" width="0.254" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R4" pad="2"/>
@@ -971,70 +1079,178 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$16">
 <contactref element="BUTTON0" pad="P$2"/>
 <contactref element="BUTTON0" pad="P$4"/>
+<wire x1="144.8816" y1="49.5808" x2="144.8816" y2="44.704" width="0.254" layer="1"/>
+<wire x1="144.8816" y1="44.704" x2="144.78" y2="44.6" width="0.254" layer="1"/>
+<wire x1="144.8816" y1="49.5808" x2="144.78" y2="49.6" width="0.254" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="BUTTON1" pad="P$2"/>
 <contactref element="BUTTON1" pad="P$4"/>
+<wire x1="18.4912" y1="48.768" x2="18.4912" y2="44.0944" width="0.254" layer="1"/>
+<wire x1="18.4912" y1="44.0944" x2="18.48" y2="43.9" width="0.254" layer="1"/>
+<wire x1="18.4912" y1="48.768" x2="18.48" y2="48.9" width="0.254" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="BUTTON5" pad="P$2"/>
 <contactref element="BUTTON5" pad="P$4"/>
+<wire x1="33.1216" y1="30.8864" x2="33.1216" y2="26.0096" width="0.254" layer="1"/>
+<wire x1="33.1216" y1="26.0096" x2="33.02" y2="25.9" width="0.254" layer="1"/>
+<wire x1="33.1216" y1="30.8864" x2="33.02" y2="30.9" width="0.254" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="BUTTON3" pad="P$2"/>
 <contactref element="BUTTON3" pad="P$4"/>
+<wire x1="33.1216" y1="12.5984" x2="33.1216" y2="7.7216" width="0.254" layer="1"/>
+<wire x1="33.1216" y1="7.7216" x2="33.02" y2="7.64" width="0.254" layer="1"/>
+<wire x1="33.1216" y1="12.5984" x2="33.02" y2="12.64" width="0.254" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="BUTTON2" pad="P$2"/>
 <contactref element="BUTTON2" pad="P$4"/>
+<wire x1="50.8" y1="29.5" x2="50.8" y2="24.5" width="0.254" layer="1"/>
 </signal>
 <signal name="BUTTON0">
 <contactref element="R6" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="48"/>
 <contactref element="BUTTON0" pad="P$1"/>
-<wire x1="132.78" y1="49.6" x2="112.59" y2="35.28" width="0" layer="19" extent="1-1"/>
-<wire x1="41.4401" y1="36.83" x2="132.78" y2="49.6" width="0" layer="19" extent="1-1"/>
 <contactref element="BUTTON0" pad="P$3"/>
+<wire x1="132.8928" y1="49.5808" x2="132.8928" y2="44.704" width="0.254" layer="1"/>
+<wire x1="132.8928" y1="44.704" x2="132.78" y2="44.6" width="0.254" layer="1"/>
+<wire x1="132.8928" y1="49.5808" x2="132.78" y2="49.6" width="0.254" layer="1"/>
+<wire x1="59.3344" y1="39.2176" x2="41.4528" y2="39.2176" width="0.254" layer="1"/>
+<wire x1="67.056" y1="31.496" x2="59.3344" y2="39.2176" width="0.254" layer="1"/>
+<wire x1="110.5408" y1="31.496" x2="67.056" y2="31.496" width="0.254" layer="1"/>
+<wire x1="111.3536" y1="32.3088" x2="110.5408" y2="31.496" width="0.254" layer="1"/>
+<wire x1="111.3536" y1="33.9344" x2="111.3536" y2="32.3088" width="0.254" layer="1"/>
+<wire x1="112.5728" y1="35.1536" x2="111.3536" y2="33.9344" width="0.254" layer="1"/>
+<wire x1="41.4528" y1="39.2176" x2="41.4401" y2="39.37" width="0.254" layer="1"/>
+<wire x1="112.5728" y1="35.1536" x2="112.59" y2="35.28" width="0.254" layer="1"/>
+<wire x1="129.032" y1="49.784" x2="132.6896" y2="49.784" width="0.254" layer="1"/>
+<wire x1="125.7808" y1="53.0352" x2="129.032" y2="49.784" width="0.254" layer="1"/>
+<wire x1="118.0592" y1="53.0352" x2="125.7808" y2="53.0352" width="0.254" layer="1"/>
+<wire x1="112.776" y1="47.752" x2="118.0592" y2="53.0352" width="0.254" layer="1"/>
+<wire x1="112.776" y1="35.3568" x2="112.776" y2="47.752" width="0.254" layer="1"/>
+<wire x1="132.6896" y1="49.784" x2="132.78" y2="49.6" width="0.254" layer="1"/>
+<wire x1="112.776" y1="35.3568" x2="112.59" y2="35.28" width="0.254" layer="1"/>
 </signal>
 <signal name="BUTTON1">
 <contactref element="R7" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="20"/>
 <contactref element="BUTTON1" pad="P$1"/>
-<wire x1="33.02" y1="43.9" x2="122.75" y2="9.88" width="0" layer="19" extent="1-1"/>
-<wire x1="36.0299" y1="39.37" x2="33.02" y2="43.9" width="0" layer="19" extent="1-1"/>
 <contactref element="BUTTON1" pad="P$3"/>
+<wire x1="34.9504" y1="39.4208" x2="35.9664" y2="39.4208" width="0.254" layer="1"/>
+<wire x1="30.48" y1="43.8912" x2="34.9504" y2="39.4208" width="0.254" layer="1"/>
+<wire x1="35.9664" y1="39.4208" x2="36.0299" y2="39.37" width="0.254" layer="1"/>
+<wire x1="30.48" y1="43.8912" x2="30.48" y2="43.9" width="0.254" layer="1"/>
+<wire x1="121.92" y1="9.9568" x2="122.7328" y2="9.9568" width="0.254" layer="1"/>
+<wire x1="108.9152" y1="22.9616" x2="121.92" y2="9.9568" width="0.254" layer="1"/>
+<wire x1="36.7792" y1="22.9616" x2="108.9152" y2="22.9616" width="0.254" layer="1"/>
+<wire x1="34.544" y1="25.1968" x2="36.7792" y2="22.9616" width="0.254" layer="1"/>
+<wire x1="34.544" y1="39.0144" x2="34.544" y2="25.1968" width="0.254" layer="1"/>
+<wire x1="34.9504" y1="39.4208" x2="34.544" y2="39.0144" width="0.254" layer="1"/>
+<wire x1="122.7328" y1="9.9568" x2="122.75" y2="9.88" width="0.254" layer="1"/>
+<wire x1="30.48" y1="43.9" x2="30.48" y2="48.9" width="0.254" layer="1"/>
 </signal>
 <signal name="BUTTON5">
 <contactref element="R11" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="60"/>
 <contactref element="BUTTON5" pad="P$1"/>
-<wire x1="21.02" y1="30.9" x2="127.83" y2="35.28" width="0" layer="19" extent="1-1"/>
-<wire x1="19.8501" y1="26.67" x2="21.02" y2="30.9" width="0" layer="19" extent="1-1"/>
 <contactref element="BUTTON5" pad="P$3"/>
+<wire x1="19.5072" y1="34.544" x2="19.1008" y2="34.9504" width="0.254" layer="1"/>
+<wire x1="19.7104" y1="34.544" x2="19.5072" y2="34.544" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="33.3248" x2="19.7104" y2="34.544" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="31.0896" x2="20.9296" y2="33.3248" width="0.254" layer="1"/>
+<wire x1="19.1008" y1="34.9504" x2="19.05" y2="35.0901" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="31.0896" x2="21.02" y2="30.9" width="0.254" layer="1"/>
+<wire x1="127" y1="35.3568" x2="127.8128" y2="35.3568" width="0.254" layer="16"/>
+<wire x1="104.4448" y1="57.912" x2="127" y2="35.3568" width="0.254" layer="16"/>
+<wire x1="89.2048" y1="57.912" x2="104.4448" y2="57.912" width="0.254" layer="16"/>
+<wire x1="63.6016" y1="32.3088" x2="89.2048" y2="57.912" width="0.254" layer="16"/>
+<wire x1="22.352" y1="32.3088" x2="63.6016" y2="32.3088" width="0.254" layer="16"/>
+<wire x1="21.1328" y1="31.0896" x2="22.352" y2="32.3088" width="0.254" layer="16"/>
+<wire x1="127.8128" y1="35.3568" x2="127.83" y2="35.28" width="0.254" layer="16"/>
+<wire x1="21.1328" y1="31.0896" x2="21.02" y2="30.9" width="0.254" layer="16"/>
+<wire x1="21.1328" y1="30.8864" x2="21.1328" y2="26.0096" width="0.254" layer="1"/>
+<wire x1="21.1328" y1="26.0096" x2="21.02" y2="25.9" width="0.254" layer="1"/>
+<wire x1="21.1328" y1="30.8864" x2="21.02" y2="30.9" width="0.254" layer="1"/>
 </signal>
 <signal name="BUTTON4">
 <contactref element="R10" pad="2"/>
 <contactref element="BUTTON4" pad="P$1"/>
 <contactref element="POCKETBEAGLE" pad="54"/>
-<wire x1="3.24" y1="30.2" x2="120.21" y2="35.28" width="0" layer="19" extent="1-1"/>
-<wire x1="3.3401" y1="16.51" x2="3.24" y2="30.2" width="0" layer="19" extent="1-1"/>
 <contactref element="BUTTON4" pad="P$3"/>
+<wire x1="3.2512" y1="30.2768" x2="3.2512" y2="39.2176" width="0.254" layer="1"/>
+<wire x1="3.2512" y1="39.2176" x2="3.3401" y2="39.37" width="0.254" layer="1"/>
+<wire x1="3.2512" y1="30.2768" x2="3.24" y2="30.2" width="0.254" layer="1"/>
+<wire x1="120.0912" y1="38.2016" x2="120.0912" y2="35.3568" width="0.254" layer="16"/>
+<wire x1="102.8192" y1="55.4736" x2="120.0912" y2="38.2016" width="0.254" layer="16"/>
+<wire x1="102.8192" y1="56.2864" x2="102.8192" y2="55.4736" width="0.254" layer="16"/>
+<wire x1="101.6" y1="57.5056" x2="102.8192" y2="56.2864" width="0.254" layer="16"/>
+<wire x1="89.408" y1="57.5056" x2="101.6" y2="57.5056" width="0.254" layer="16"/>
+<wire x1="62.7888" y1="30.8864" x2="89.408" y2="57.5056" width="0.254" layer="16"/>
+<wire x1="34.9504" y1="30.8864" x2="62.7888" y2="30.8864" width="0.254" layer="16"/>
+<wire x1="32.7152" y1="28.6512" x2="34.9504" y2="30.8864" width="0.254" layer="16"/>
+<wire x1="4.6736" y1="28.6512" x2="32.7152" y2="28.6512" width="0.254" layer="16"/>
+<wire x1="3.2512" y1="30.0736" x2="4.6736" y2="28.6512" width="0.254" layer="16"/>
+<wire x1="120.0912" y1="35.3568" x2="120.21" y2="35.28" width="0.254" layer="16"/>
+<wire x1="3.2512" y1="30.0736" x2="3.24" y2="30.2" width="0.254" layer="16"/>
+<wire x1="3.2512" y1="27.2288" x2="3.2512" y2="25.4" width="0.254" layer="16"/>
+<wire x1="4.6736" y1="28.6512" x2="3.2512" y2="27.2288" width="0.254" layer="16"/>
+<wire x1="3.2512" y1="25.4" x2="3.24" y2="25.2" width="0.254" layer="16"/>
 </signal>
 <signal name="BUTTON3">
 <contactref element="R9" pad="2"/>
 <contactref element="BUTTON3" pad="P$1"/>
 <contactref element="POCKETBEAGLE" pad="58"/>
-<wire x1="21.02" y1="12.64" x2="125.29" y2="35.28" width="0" layer="19" extent="1-1"/>
-<wire x1="19.8501" y1="1.27" x2="21.02" y2="12.64" width="0" layer="19" extent="1-1"/>
 <contactref element="BUTTON3" pad="P$3"/>
+<wire x1="19.9136" y1="11.5824" x2="17.4752" y2="11.5824" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="12.5984" x2="19.9136" y2="11.5824" width="0.254" layer="1"/>
+<wire x1="17.4752" y1="11.5824" x2="17.3101" y2="11.43" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="12.5984" x2="21.02" y2="12.64" width="0.254" layer="1"/>
+<wire x1="125.1712" y1="34.3408" x2="125.1712" y2="35.1536" width="0.254" layer="16"/>
+<wire x1="123.952" y1="33.1216" x2="125.1712" y2="34.3408" width="0.254" layer="16"/>
+<wire x1="123.952" y1="15.24" x2="123.952" y2="33.1216" width="0.254" layer="16"/>
+<wire x1="118.872" y1="10.16" x2="123.952" y2="15.24" width="0.254" layer="16"/>
+<wire x1="118.872" y1="9.3472" x2="118.872" y2="10.16" width="0.254" layer="16"/>
+<wire x1="118.0592" y1="8.5344" x2="118.872" y2="9.3472" width="0.254" layer="16"/>
+<wire x1="117.2464" y1="8.5344" x2="118.0592" y2="8.5344" width="0.254" layer="16"/>
+<wire x1="116.4336" y1="7.7216" x2="117.2464" y2="8.5344" width="0.254" layer="16"/>
+<wire x1="116.4336" y1="6.9088" x2="116.4336" y2="7.7216" width="0.254" layer="16"/>
+<wire x1="115.2144" y1="5.6896" x2="116.4336" y2="6.9088" width="0.254" layer="16"/>
+<wire x1="22.9616" y1="5.6896" x2="115.2144" y2="5.6896" width="0.254" layer="16"/>
+<wire x1="21.1328" y1="7.5184" x2="22.9616" y2="5.6896" width="0.254" layer="16"/>
+<wire x1="125.1712" y1="35.1536" x2="125.29" y2="35.28" width="0.254" layer="16"/>
+<wire x1="21.1328" y1="7.5184" x2="21.02" y2="7.64" width="0.254" layer="16"/>
+<wire x1="19.9136" y1="8.7376" x2="19.9136" y2="11.5824" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="7.7216" x2="19.9136" y2="8.7376" width="0.254" layer="1"/>
+<wire x1="20.9296" y1="7.7216" x2="21.02" y2="7.64" width="0.254" layer="1"/>
 </signal>
 <signal name="BUTTON2">
 <contactref element="R8" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="55"/>
 <contactref element="BUTTON2" pad="P$1"/>
-<wire x1="38.8" y1="29.5" x2="122.75" y2="32.74" width="0" layer="19" extent="1-1"/>
-<wire x1="38.9001" y1="11.43" x2="38.8" y2="29.5" width="0" layer="19" extent="1-1"/>
 <contactref element="BUTTON2" pad="P$3"/>
+<wire x1="36.7792" y1="27.6352" x2="35.56" y2="27.6352" width="0.254" layer="1"/>
+<wire x1="38.608" y1="29.464" x2="36.7792" y2="27.6352" width="0.254" layer="1"/>
+<wire x1="35.56" y1="27.6352" x2="35.56" y2="27.4701" width="0.254" layer="1"/>
+<wire x1="38.608" y1="29.464" x2="38.8" y2="29.5" width="0.254" layer="1"/>
+<wire x1="121.92" y1="32.7152" x2="122.7328" y2="32.7152" width="0.254" layer="1"/>
+<wire x1="120.7008" y1="31.496" x2="121.92" y2="32.7152" width="0.254" layer="1"/>
+<wire x1="117.2464" y1="31.496" x2="120.7008" y2="31.496" width="0.254" layer="1"/>
+<wire x1="116.4336" y1="32.3088" x2="117.2464" y2="31.496" width="0.254" layer="1"/>
+<wire x1="116.4336" y1="33.1216" x2="116.4336" y2="32.3088" width="0.254" layer="1"/>
+<wire x1="115.6208" y1="33.9344" x2="116.4336" y2="33.1216" width="0.254" layer="1"/>
+<wire x1="114.6048" y1="33.9344" x2="115.6208" y2="33.9344" width="0.254" layer="1"/>
+<wire x1="113.792" y1="33.1216" x2="114.6048" y2="33.9344" width="0.254" layer="1"/>
+<wire x1="113.792" y1="32.3088" x2="113.792" y2="33.1216" width="0.254" layer="1"/>
+<wire x1="112.3696" y1="30.8864" x2="113.792" y2="32.3088" width="0.254" layer="1"/>
+<wire x1="40.0304" y1="30.8864" x2="112.3696" y2="30.8864" width="0.254" layer="1"/>
+<wire x1="38.8112" y1="29.6672" x2="40.0304" y2="30.8864" width="0.254" layer="1"/>
+<wire x1="122.7328" y1="32.7152" x2="122.75" y2="32.74" width="0.254" layer="1"/>
+<wire x1="38.8112" y1="29.6672" x2="38.8" y2="29.5" width="0.254" layer="1"/>
+<wire x1="38.608" y1="25.8064" x2="38.608" y2="24.5872" width="0.254" layer="1"/>
+<wire x1="36.7792" y1="27.6352" x2="38.608" y2="25.8064" width="0.254" layer="1"/>
+<wire x1="38.608" y1="24.5872" x2="38.8" y2="24.5" width="0.254" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="POCKETBEAGLE" pad="24"/>
@@ -1042,46 +1258,71 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="8X8CLK">
 <contactref element="MOD" pad="2"/>
 <contactref element="POCKETBEAGLE" pad="8"/>
-<wire x1="93.98" y1="55.88" x2="107.51" y2="9.88" width="0" layer="19" extent="1-1"/>
+<wire x1="94.0816" y1="23.368" x2="94.0816" y2="55.88" width="0.254" layer="16"/>
+<wire x1="107.4928" y1="9.9568" x2="94.0816" y2="23.368" width="0.254" layer="16"/>
+<wire x1="94.0816" y1="55.88" x2="93.98" y2="55.88" width="0.254" layer="16"/>
+<wire x1="107.4928" y1="9.9568" x2="107.51" y2="9.88" width="0.254" layer="16"/>
 </signal>
 <signal name="8X8MOSI">
 <contactref element="MOD" pad="4"/>
 <contactref element="POCKETBEAGLE" pad="12"/>
-<wire x1="112.59" y1="9.88" x2="99.06" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="99.1616" y1="47.9552" x2="99.1616" y2="55.88" width="0.254" layer="16"/>
+<wire x1="111.3536" y1="35.7632" x2="99.1616" y2="47.9552" width="0.254" layer="16"/>
+<wire x1="111.3536" y1="11.176" x2="111.3536" y2="35.7632" width="0.254" layer="16"/>
+<wire x1="112.5728" y1="9.9568" x2="111.3536" y2="11.176" width="0.254" layer="16"/>
+<wire x1="99.1616" y1="55.88" x2="99.06" y2="55.88" width="0.254" layer="16"/>
+<wire x1="112.5728" y1="9.9568" x2="112.59" y2="9.88" width="0.254" layer="16"/>
 </signal>
 <signal name="8X8MOSI1">
 <contactref element="MOD1" pad="4"/>
 <contactref element="POCKETBEAGLE" pad="61"/>
-<wire x1="38.1" y1="55.88" x2="130.37" y2="32.74" width="0" layer="19" extent="1-1"/>
+<wire x1="130.2512" y1="33.7312" x2="130.2512" y2="32.9184" width="0.254" layer="16"/>
+<wire x1="129.032" y1="34.9504" x2="130.2512" y2="33.7312" width="0.254" layer="16"/>
+<wire x1="129.032" y1="42.2656" x2="129.032" y2="34.9504" width="0.254" layer="16"/>
+<wire x1="109.1184" y1="62.1792" x2="129.032" y2="42.2656" width="0.254" layer="16"/>
+<wire x1="44.5008" y1="62.1792" x2="109.1184" y2="62.1792" width="0.254" layer="16"/>
+<wire x1="38.2016" y1="55.88" x2="44.5008" y2="62.1792" width="0.254" layer="16"/>
+<wire x1="130.2512" y1="32.9184" x2="130.37" y2="32.74" width="0.254" layer="16"/>
+<wire x1="38.2016" y1="55.88" x2="38.1" y2="55.88" width="0.254" layer="16"/>
 </signal>
 <signal name="8X8CLK1">
 <contactref element="POCKETBEAGLE" pad="65"/>
+<contactref element="MOD1" pad="2"/>
+<wire x1="135.3312" y1="33.7312" x2="135.3312" y2="32.9184" width="0.254" layer="1"/>
+<wire x1="134.112" y1="34.9504" x2="135.3312" y2="33.7312" width="0.254" layer="1"/>
+<wire x1="134.112" y1="43.8912" x2="134.112" y2="34.9504" width="0.254" layer="1"/>
+<wire x1="134.3152" y1="44.0944" x2="134.112" y2="43.8912" width="0.254" layer="1"/>
+<wire x1="134.3152" y1="49.9872" x2="134.3152" y2="44.0944" width="0.254" layer="1"/>
+<wire x1="126.3904" y1="57.912" x2="134.3152" y2="49.9872" width="0.254" layer="1"/>
+<wire x1="35.1536" y1="57.912" x2="126.3904" y2="57.912" width="0.254" layer="1"/>
+<wire x1="33.1216" y1="55.88" x2="35.1536" y2="57.912" width="0.254" layer="1"/>
+<wire x1="135.3312" y1="32.9184" x2="135.45" y2="32.74" width="0.254" layer="1"/>
+<wire x1="33.1216" y1="55.88" x2="33.02" y2="55.88" width="0.254" layer="1"/>
 </signal>
 <signal name="8X8CS1">
 <contactref element="MOD1" pad="3"/>
 <contactref element="POCKETBEAGLE" pad="67"/>
-<wire x1="35.56" y1="55.88" x2="137.99" y2="32.74" width="0" layer="19" extent="1-1"/>
+<wire x1="137.9728" y1="33.528" x2="137.9728" y2="32.9184" width="0.254" layer="16"/>
+<wire x1="136.7536" y1="34.7472" x2="137.9728" y2="33.528" width="0.254" layer="16"/>
+<wire x1="136.7536" y1="35.7632" x2="136.7536" y2="34.7472" width="0.254" layer="16"/>
+<wire x1="109.5248" y1="62.992" x2="136.7536" y2="35.7632" width="0.254" layer="16"/>
+<wire x1="42.0624" y1="62.992" x2="109.5248" y2="62.992" width="0.254" layer="16"/>
+<wire x1="35.56" y1="56.4896" x2="42.0624" y2="62.992" width="0.254" layer="16"/>
+<wire x1="35.56" y1="55.88" x2="35.56" y2="56.4896" width="0.254" layer="16"/>
+<wire x1="137.9728" y1="32.9184" x2="137.99" y2="32.74" width="0.254" layer="16"/>
 </signal>
 <signal name="8X8CS">
 <contactref element="MOD" pad="3"/>
 <contactref element="POCKETBEAGLE" pad="6"/>
-<wire x1="96.52" y1="55.88" x2="104.97" y2="9.88" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$4">
-<polygon width="0.1524" layer="2">
-<vertex x="-12.7" y="-12.7"/>
-<vertex x="-12.7" y="76.2"/>
-<vertex x="165.1" y="76.2"/>
-<vertex x="165.1" y="-12.7"/>
-</polygon>
+<wire x1="96.52" y1="22.5552" x2="96.52" y2="55.88" width="0.254" layer="16"/>
+<wire x1="108.712" y1="10.3632" x2="96.52" y2="22.5552" width="0.254" layer="16"/>
+<wire x1="108.712" y1="9.3472" x2="108.712" y2="10.3632" width="0.254" layer="16"/>
+<wire x1="107.8992" y1="8.5344" x2="108.712" y2="9.3472" width="0.254" layer="16"/>
+<wire x1="106.2736" y1="8.5344" x2="107.8992" y2="8.5344" width="0.254" layer="16"/>
+<wire x1="105.0544" y1="9.7536" x2="106.2736" y2="8.5344" width="0.254" layer="16"/>
+<wire x1="105.0544" y1="9.7536" x2="104.97" y2="9.88" width="0.254" layer="16"/>
 </signal>
 <signal name="N$9">
-<polygon width="0.1524" layer="15">
-<vertex x="-25.4" y="-25.4"/>
-<vertex x="-25.4" y="88.9"/>
-<vertex x="177.8" y="88.9"/>
-<vertex x="177.8" y="-25.4"/>
-</polygon>
 <contactref element="LED1" pad="P$2"/>
 </signal>
 <signal name="N$10">
@@ -1090,7 +1331,18 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$14">
 <contactref element="POCKETBEAGLE" pad="53"/>
 <contactref element="R1" pad="2"/>
-<wire x1="118.9101" y1="44.45" x2="120.21" y2="32.74" width="0" layer="19" extent="1-1"/>
+<wire x1="118.872" y1="34.1376" x2="118.872" y2="44.2976" width="0.254" layer="1"/>
+<wire x1="120.0912" y1="32.9184" x2="118.872" y2="34.1376" width="0.254" layer="1"/>
+<wire x1="118.872" y1="44.2976" x2="118.9101" y2="44.45" width="0.254" layer="1"/>
+<wire x1="120.0912" y1="32.9184" x2="120.21" y2="32.74" width="0.254" layer="1"/>
+</signal>
+<signal name="VDD_3P3V">
+<polygon width="0.1524" layer="15">
+<vertex x="-25.4" y="-25.4"/>
+<vertex x="-25.4" y="88.9"/>
+<vertex x="177.8" y="88.9"/>
+<vertex x="177.8" y="-25.4"/>
+</polygon>
 </signal>
 </signals>
 </board>

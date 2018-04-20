@@ -1314,12 +1314,12 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="RESET#" pad="62"/>
 <connect gate="G$1" pin="SPI0.CLK" pad="8"/>
 <connect gate="G$1" pin="SPI0.CS" pad="6"/>
-<connect gate="G$1" pin="SPI0.MISO" pad="63"/>
-<connect gate="G$1" pin="SPI0.MOSI" pad="61"/>
+<connect gate="G$1" pin="SPI0.MISO" pad="10"/>
+<connect gate="G$1" pin="SPI0.MOSI" pad="12"/>
 <connect gate="G$1" pin="SPI1.CLK" pad="65"/>
 <connect gate="G$1" pin="SPI1.CS" pad="67"/>
-<connect gate="G$1" pin="SPI1.MISO" pad="10"/>
-<connect gate="G$1" pin="SPI1.MOSI" pad="12"/>
+<connect gate="G$1" pin="SPI1.MISO" pad="63"/>
+<connect gate="G$1" pin="SPI1.MOSI" pad="61"/>
 <connect gate="G$1" pin="UART0.RX" pad="32"/>
 <connect gate="G$1" pin="UART0.TX" pad="30"/>
 <connect gate="G$1" pin="UART4.RX" pad="41"/>
@@ -2117,7 +2117,8 @@ ARRAY</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="116.84" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="116.84" x2="215.9" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="LED0" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2202,8 +2203,9 @@ ARRAY</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="33.02" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <label x="119.38" y="25.4" size="1.778" layer="95"/>
+<pinref part="BUTTON0" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="POCKETBEAGLE" gate="G$1" pin="PWR.BTN"/>
@@ -2215,8 +2217,9 @@ ARRAY</text>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="33.02" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="27.94" x2="185.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 <label x="175.26" y="25.4" size="1.778" layer="95"/>
+<pinref part="BUTTON1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="POCKETBEAGLE" gate="G$1" pin="GPIO20"/>
